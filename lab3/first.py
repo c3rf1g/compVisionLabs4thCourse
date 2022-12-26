@@ -1,7 +1,7 @@
 import cv2
 import numpy
 
-img_src = cv2.imread('3-1.png', cv2.IMREAD_REDUCED_GRAYSCALE_2)
+img_src = cv2.imread('3-2.png', cv2.IMREAD_REDUCED_GRAYSCALE_2)
 
 blurred_img_src = cv2.blur(img_src, (5, 5), cv2.BORDER_DEFAULT)
 median_img_src = cv2.medianBlur(img_src, 7)

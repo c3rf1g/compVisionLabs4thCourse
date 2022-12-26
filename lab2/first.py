@@ -1,6 +1,6 @@
 import cv2
-IMAGE = '213.jpg'
-img = cv2.imread(IMAGE, cv2.IMREAD_REDUCED_GRAYSCALE_2)
+IMAGE = '212.jpg'
+img = cv2.imread(IMAGE, cv2.IMREAD_GRAYSCALE)
 cv2.imshow('src', img)
 _, img_src = cv2.threshold(img, 160, 255, cv2.THRESH_TRUNC)
 cv2.imshow('truncated', img_src)
